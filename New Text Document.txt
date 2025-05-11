@@ -1,0 +1,6 @@
+J:\projects-cusor\index.html
+J:\projects-cusor\profile.html
+J:\projects-cusor\settings.html
+J:\projects-cusor\package.json
+J:\projects-cusor\styles.css
+J:\projects-cusor\script.js

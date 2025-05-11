@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>امضا</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .signature-container {
+            max-width: 400px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .signature-button {
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .signature-button:hover {
+            background: #45a049;
+        }
+
+        .signature-preview {
+            margin-top: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: center;
+            font-family: 'Tahoma', sans-serif;
+            font-size: 1.2rem;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>امضا</h1>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">صفحه خانه</a></li>
+                <li class="dropdown">
+                    <a href="index.html#about">درباره ما</a>
+                    <ul class="dropdown-content">
+                        <li><a href="index.html#team">تیم ما</a></li>
+                        <li><a href="index.html#history">تاریخچه</a></li>
+                        <li><a href="index.html#mission">ماموریت ما</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#management">مدیریت من</a>
+                    <ul class="dropdown-content">
+                        <li><a href="profile.html">پروفایل</a></li>
+                        <li><a href="settings.html">تنظیمات</a></li>
+                        <li><a href="index.html#messages">پیام‌ها</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="signature-container">
+            <h2>فرم امضا</h2>
+            <form id="signature-form">
+                <div class="form-group">
+                    <label for="name">نام و نام خانوادگی:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">رمز عبور:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="signature-preview" id="signature-preview">
+                    امضای شما اینجا نمایش داده می‌شود
+                </div>
+                <button type="submit" class="signature-button">تایید امضا</button>
+                <div class="login-links">
+                    <a href="forgot-password.html">رمز عبور را فراموش کرده‌اید؟</a>
+                    <a href="register.html">ثبت‌نام</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 تمامی حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
